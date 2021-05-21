@@ -75,7 +75,7 @@ class TrieNode {
         for (level = 0; level < len; level++) {
             int index = word.charAt(level) - 'a';
 
-            //when user tries to wrong type of word that is not a lowercase word containing characters only from 'a' to 'z'
+            //when user tries to delete wrong type of word that is not a lowercase word and not containing characters only from 'a' to 'z'
             if(index>=rNode.child.length||index<0)return false;
 
             if (rNode.child[index] == null) {
